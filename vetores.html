@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+  let vetor = [] // declarando o vetor
+
+  vetor[0] = 8  // adicionando valor à posição 
+
+  vetor.push(4)  // adiciona valor à última posição
+
+  vetor.push(3, 2, 1, 5)  // adiciona os valores nas últimas posições
+
+  console.log(vetor.length)  // mostra o tamanho do vetor
+
+  vetor.sort()  // ordena o vetor
+
+  console.log(vetor)  // mostra o vetor --> [ x, y, z ]
+
+/*  for (let i=0; i<vetor.length; i++) {  // imprime os valores do vetor um de cada vez
+    console.log(vetor[i])
+  } */
+
+  for (let j in vetor) {  // imprime os valores do vetor um de cada vez
+    console.log(vetor[j])
+  }
+
+  console.log(`o número 8 está na posição ${vetor.indexOf(8)}`)  // busca o índice do valor passado como parâmetro, retorna -1 se não encontrar
+
+</script>
+</html>

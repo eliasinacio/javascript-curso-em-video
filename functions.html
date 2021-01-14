@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+
+function parOuImpar(num) {   // declaração da função // num é um parâmetro
+  if (num%2==0) {
+    return 'par'   // retorno 
+  } else {
+    return 'impar'
+  }
+}
+
+function soma (num1=0, num2=0) {   // declara a função prevendo a falta de algum parâmetro na chamada
+  return num1 + num2
+}
+
+res = parOuImpar(3)  // chamada da função
+console.log( res )
+console.log( soma(4, 0) )
+console.log( soma(4) )
+
+let dobro = function (num) {   // atribuindo uma função a uma variável
+  return 2*num
+}
+
+console.log( dobro(5) )   // a variável serve como chamada para a função 
+
+function fatorial (n) {
+  if (n==1) {
+    return 1
+  } else {
+    return n * fatorial(n-1)
+  }
+}
+
+console.log(fatorial(5))
+
+</script>
+
+</html>

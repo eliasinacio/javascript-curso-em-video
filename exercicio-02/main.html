@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idades</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <header>
+    <h2>Verificador de idade</h2>
+  </header>
+  
+  <section id="main">
+    <div id="entrada">
+      <h3>Ano de Nascimento: 
+        <input type="number" name="n-ano" id="r-ano" min="0">
+      </h3>
+      
+      <h3>Sexo: 
+        <input type="radio" name="radsex" id="mas">
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem">
+        <label for="fem">Feminino</label>
+      </h3>
+
+      <input type="button" value="Verificar" id="button">
+    </div>
+
+    <div id="saida">
+      <h4 id="resposta">Preencha os dados e clique no botão</h4>
+      <img id="imagem" hidden> 
+    </div>
+
+  </section>
+
+  <footer id="msg">Imagens meramente ilustrativas e sem compromisso com a realidade</footer>
+  <footer>by @eu_liaaas</footer>
+</body>
+<script src="script.js"></script>
+</html>
